@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <script src="js/app.js" type="module"></script>
+    <title>Document</title>
+
+    
+</head>
+<body>
+    <div class="container">
+
+        <div class="select-mode">
+            <p>Выберите режим</p>
+            <div class="btns">
+                <button id="friendlyModeBtn" class="Button">PvP</button>
+                <div class="PvE">
+                    <button id="compModeBtn" class="Button">PvE</button>
+
+                    <div class="mode">
+                        <button id="easyMode" class="Button hidden">Легко</button>
+                        <button id="hardMode" class="Button hidden">Сложно</button>
+                    </div>
+
+                    <div class="choosePlayer">
+                        <button id="Xplayer" class="Button hidden">X</button>
+                        <button id="Oplayer" class="Button hidden">0</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal hide">
+            <p id="winnerTxt"></p>
+        </div>
+
+        <div class="winnr">
+            <p>Счёт:</p>
+            <div class="score">
+                <div class="firs">
+                    X : <span class="cross">0</span>
+                </div>
+                    <div class="sec">
+                        O: <span class="circle">0</span>
+                    </div>
+            </div>
+        </div>
+        
+        <div class="xo">
+            <div class="cell" id="0"></div>
+            <div class="cell" id="1"></div>
+            <div class="cell" id="2"></div> 
+            <div class="cell" id="3"></div>
+            <div class="cell" id="4"></div>
+            <div class="cell" id="5"></div>
+            <div class="cell" id="6"></div>
+            <div class="cell" id="7"></div>
+            <div class="cell" id="8"></div>
+        </div>
+    
+       
+        
+        <div class="btns">
+            <button id="resetButton" class="Button">Рестарт</button>
+            <button id="reloadBtn" class="Button">&#8634</button>
+        </div>
+    </div>
+    
+</body>
+</html>
